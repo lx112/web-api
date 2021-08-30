@@ -9,7 +9,7 @@ class MomentController {
   async detail(ctx) {
     const { momentId } = ctx.params;
     const result = await service.getMomentById(momentId);
-    result[0].test = 1;
+    result[0].test = 'test2';
     ctx.body = result[0];
   }
   async list(ctx) {
